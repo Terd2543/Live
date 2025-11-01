@@ -1,65 +1,27 @@
 {
   "name": "bedrocklive",
   "version": "1.2.3",
-  "description": "Turn your Minecraft streams into interactive TikTok experiences. Connect live stream events directly to your game world.",
+  "description": "Turn your Minecraft streams into interactive TikTok experiences.",
   "main": "dist/app.js",
   "type": "module",
-  "bin": {
-    "bedrocklive": "./bin/bedrocklive.js"
-  },
   "scripts": {
-    "start": "npm run build && node dist/app.js",
+    "start": "node dist/app.js",
     "build": "tsc",
     "dev": "tsc && node dist/app.js"
-  },
-  "keywords": [
-    "tiktok",
-    "minecraft",
-    "live",
-    "stream",
-    "connector",
-    "bedrock",
-    "pocket-edition",
-    "tnt-challenge",
-    "websocket",
-    "gaming",
-    "interactive"
-  ],
-  "author": {
-    "name": "Rqinix",
-    "url": "https://github.com/rqinix"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rqinix/BedrockLive.git"
-  },
-  "bugs": {
-    "url": "https://github.com/rqinix/BedrockLive/issues"
-  },
-  "homepage": "https://github.com/rqinix/BedrockLive#readme",
-  "files": [
-    "dist/**/*",
-    "bin/**/*",
-    "README.md",
-    "LICENSE"
-  ],
-  "devDependencies": {
-    "@types/express": "^5.0.0",
-    "@types/gradient-string": "^1.1.6",
-    "@types/uuid": "^10.0.0",
-    "@types/ws": "^8.5.13",
-    "typescript": "^5.7.2"
   },
   "dependencies": {
     "chalk": "^5.4.1",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "gradient-string": "^3.0.0",
-    "inquirer": "^12.3.0",
     "nanospinner": "^1.2.2",
     "tiktok-live-connector": "^2.0.5-beta",
     "uuid": "^11.0.3",
     "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "@types/express": "^5.0.0",
+    "@types/ws": "^8.5.13"
   }
 }
